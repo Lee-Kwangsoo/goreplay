@@ -353,6 +353,7 @@ func (t *Listener) readPcap() {
 			} else {
 				inactive.SetSnapLen(65536)
 			}
+
 			inactive.SetTimeout(t.messageExpire)
 			inactive.SetPromisc(true)
 			inactive.SetImmediateMode(t.immediateMode)
